@@ -1,34 +1,42 @@
-import React, { useState } from 'react';
-import { StatusBar, StyleSheet, useColorScheme } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { TestScreen } from './screens/TestScreen.tsx';
-import { HomeScreen } from './screens/HomeScreen.tsx';
-
+import { Pressable, StyleSheet, Text, View } from 'react-native';
+import React from 'react';
 type TestLibrary = {
   id: string;
   title: string;
 };
-function App() {
-  const isDarkMode = useColorScheme() === 'dark';
-  const [selectedLibrary, setSelectedLibrary] = useState<TestLibrary | null>(
-    null,
-  );
 
+const testLibraries: TestLibrary[] = [
+  {
+    id: 'react-native-pdf',
+    title: 'react-native-pdf',
+  },
+  {
+    id: 'react-native-skia',
+    title: 'react-native-skia',
+  },
+];
+
+export function HomeScreen({ onSelect }: { onSelect: (library: TestLibrary) => void }) {
   return (
-    <SafeAreaView style={styles.container}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      {selectedLibrary ? (
-        <TestScreen
-          library={selectedLibrary}
-          onBack={() => setSelectedLibrary(null)}
-        />
-      ) : (
-        <HomeScreen onSelect={setSelectedLibrary} />
-      )}
-    </SafeAreaView>
+    <View style={styles.screen}>
+      <Text style={styles.title}>React Native Laboratory</Text>
+      <View style={styles.buttonList}>
+        {testLibraries.map(library => (
+          <Pressable
+            key={library.id}
+            style={({ pressed }) => [
+              styles.button,
+              pressed && styles.buttonPressed,
+            ]}
+            onPress={() => onSelect(library)}
+          >
+            <Text style={styles.buttonText}>{library.title}</Text>
+          </Pressable>
+        ))}
+      </View>
+    </View>
   );
 }
-
 
 
 const styles = StyleSheet.create({
@@ -81,5 +89,3 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
 });
-
-export default App;

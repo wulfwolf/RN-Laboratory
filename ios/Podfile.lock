@@ -1424,6 +1424,72 @@ PODS:
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
     - Yoga
+  - react-native-document-picker (12.0.1):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - Yoga
+  - react-native-document-viewer (4.0.0):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - Yoga
+  - react-native-file-viewer-turbo (0.7.5):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - Yoga
   - react-native-pdf (7.0.4):
     - hermes-engine
     - RCTRequired
@@ -1968,6 +2034,9 @@ DEPENDENCIES:
   - React-microtasksnativemodule (from `../node_modules/react-native/ReactCommon/react/nativemodule/microtasks`)
   - React-mutationobservernativemodule (from `../node_modules/react-native/ReactCommon/react/nativemodule/mutationobserver`)
   - react-native-blob-util (from `../node_modules/react-native-blob-util`)
+  - "react-native-document-picker (from `../node_modules/@react-native-documents/picker`)"
+  - "react-native-document-viewer (from `../node_modules/@react-native-documents/viewer`)"
+  - react-native-file-viewer-turbo (from `../node_modules/react-native-file-viewer-turbo`)
   - react-native-pdf (from `../node_modules/react-native-pdf`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - "react-native-skia (from `../node_modules/@shopify/react-native-skia`)"
@@ -2089,6 +2158,12 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/react/nativemodule/mutationobserver"
   react-native-blob-util:
     :path: "../node_modules/react-native-blob-util"
+  react-native-document-picker:
+    :path: "../node_modules/@react-native-documents/picker"
+  react-native-document-viewer:
+    :path: "../node_modules/@react-native-documents/viewer"
+  react-native-file-viewer-turbo:
+    :path: "../node_modules/react-native-file-viewer-turbo"
   react-native-pdf:
     :path: "../node_modules/react-native-pdf"
   react-native-safe-area-context:
@@ -2207,6 +2282,9 @@ SPEC CHECKSUMS:
   React-microtasksnativemodule: ab33a818d339f5a1da308893c11b487be66121a8
   React-mutationobservernativemodule: a42d1626651ccd7d0dc02a56e69d4ec77c248893
   react-native-blob-util: f73add8409fa1416c0856ccf91ac0d9f8c7e9c44
+  react-native-document-picker: 15cca2d1a6bfb6d0d3ff0283bd9b903e57cb028b
+  react-native-document-viewer: 62008060b43ef19abf708ac2f755af0a65e22364
+  react-native-file-viewer-turbo: e34e51c7fa2ba205a8878416009529a4131f36d5
   react-native-pdf: 2bc0989bc44ef7e5221c49c0f1bb464a2c27640b
   react-native-safe-area-context: fb5c8ee9f6dd62ef710611b3d370c501f42a4ac0
   react-native-skia: 1c97500b89ca2f1e067048918fa11325795686f6
